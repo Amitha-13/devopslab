@@ -1,6 +1,6 @@
-import java.util.Scanneer;
+import java.util.Scanner;
 
-xpublic class Calculator {
+public class Calculator {
 
     public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ xpublic class Calculator {
         System.out.print("Enter second number: ");
         int b = sc.nextInt();
 
-        System.out.print("Enter operator (+ or -): ");
+        System.out.print("Enter operator (+ or - or * or /): ");
         char op = sc.next().charAt(0);
 
         switch (op) {
@@ -24,6 +24,14 @@ xpublic class Calculator {
                 System.out.println("Result = " + (a - b));
                 break;
 
+            case '*':
+                System.out.println("Result = :" + (a*b));
+                break;
+ 
+            case '/' :
+               System.out.println("Result = :" + ( a/b));
+               break;
+  
             default:
                 System.out.println("Invalid operator!");
         }
